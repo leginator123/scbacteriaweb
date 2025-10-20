@@ -1,390 +1,705 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/w3images/mac.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SalmoShield™ – Next-Gen Salmonella Vaccine</title>
+  <meta name="description"
+    content="SalmoShield™ – Next-generation Salmonella vaccine providing broad protection against multiple serotypes with enhanced immune system support." />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0bdf4a0.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="wrap">
+      <a class="brand" href="#top"><i class="fa-solid fa-shield-virus"></i> SalmoShield™</a>
+      <nav class="nav">
+        <ul>
+          <li><a href="#pathogen">The Pathogen</a></li>
+          <li><a href="#immune-response">Immune Response</a></li>
+          <li><a href="#solution">Our Solution</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</header>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Design</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div>
-
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <p class="w3-center w3-large">The ones who runs this company</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-        <div class="w3-container">
-          <h3>Dan Star</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
-    <br>Partners
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
-    <br>Projects Done
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
-    <br>Happy Clients
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
-    <br>Meetings
-  </div>
-</div>
-
-<!-- Work Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Pricing Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
-  <h3>PRICING</h3>
-  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">$ 50</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-labelledby="hero-title">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-inner wrap">
+      <h1 id="hero-title">Protecting Humanity from <span>Salmonella</span></h1>
+      <p class="lead">Advanced immune enhancement technology targeting the leading cause of bacterial foodborne illness
       </p>
-    </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+      <div class="hero-ctas">
+        <a class="btn primary" href="#pathogen">Learn More</a>
+        <a class="btn ghost" href="#contact">Get In Touch</a>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="wrap">
+      <div class="stat-item fade-in">
+        <div class="stat-number" data-target="1">0</div>
+        <div class="stat-label">Million+ US Cases Annually</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number" data-target="26500">0</div>
+        <div class="stat-label">Hospitalizations per Year</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number" data-target="420">0</div>
+        <div class="stat-label">Deaths Annually in US</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number" data-target="92">0</div>
+        <div class="stat-label">Vaccine Efficacy Rate</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PATHOGEN -->
+  <section class="section pathogen" id="pathogen">
+    <div class="wrap">
+      <h2>Understanding Salmonella</h2>
+      <div class="grid-two">
+        <div class="fade-in">
+          <h3>What is Salmonella?</h3>
+          <p><strong>Scientific Name:</strong> <em>Salmonella enterica</em></p>
+          <p><strong>Type:</strong> Bacteria</p>
+          <p>Salmonella is a group of bacteria that causes one of the most common forms of foodborne illness worldwide.
+            Named after veterinarian Daniel E. Salmon, these bacteria have been making people sick since 1885.</p>
+
+          <h4 style="margin-top: 2rem; color: var(--brand);">How It Enters the Body</h4>
+          <ul class="features">
+            <li><i class="fa-solid fa-utensils"></i> Contaminated food (raw meat, poultry, eggs)</li>
+            <li><i class="fa-solid fa-droplet"></i> Contaminated water sources</li>
+            <li><i class="fa-solid fa-hand"></i> Contact with infected animals or surfaces</li>
+            <li><i class="fa-solid fa-paw"></i> Pet food and animal habitats</li>
+          </ul>
+        </div>
+        <div class="card fade-in">
+          <h3>Infection Process</h3>
+          <div class="infection-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Entry Point</h4>
+              <p>Bacteria enters through the digestive tract via contaminated food or water. Incubation: 6 hours to 6
+                days.</p>
+            </div>
+          </div>
+          <div class="infection-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Invasion</h4>
+              <p>Salmonella survives stomach acid and invades intestinal cells, destroying the lining that absorbs
+                water.</p>
+            </div>
+          </div>
+          <div class="infection-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Spread</h4>
+              <p>In severe cases, bacteria enters bloodstream (bacteremia), potentially affecting tissues throughout the
+                body.</p>
+            </div>
+          </div>
+          <div class="infection-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Symptoms</h4>
+              <p>Diarrhea, fever, stomach cramps, nausea, vomiting. Typically lasts 4-7 days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="danger-zone" style="margin-top: 3rem;">
+        <h3>High-Risk Groups</h3>
+        <div class="risk-grid">
+          <div class="risk-card fade-in">
+            <i class="fa-solid fa-baby"></i>
+            <h4>Infants & Children Under 5</h4>
+            <p>Developing immune systems are more vulnerable to severe infection</p>
+          </div>
+          <div class="risk-card fade-in">
+            <i class="fa-solid fa-person-cane"></i>
+            <h4>Adults Over 65</h4>
+            <p>Weakened immune defenses increase complication risk</p>
+          </div>
+          <div class="risk-card fade-in">
+            <i class="fa-solid fa-pills"></i>
+            <h4>Immunocompromised</h4>
+            <p>HIV/AIDS, chemotherapy, organ transplant patients face higher danger</p>
+          </div>
+          <div class="risk-card fade-in">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h4>Chronic Conditions</h4>
+            <p>IBD, sickle cell disease, low stomach acid from medications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMMUNE RESPONSE -->
+  <section class="section immune-response" id="immune-response">
+    <div class="wrap">
+      <h2>How Your Body Fights Salmonella</h2>
+
+      <div class="immune-layers">
+        <div class="immune-card fade-in">
+          <div class="immune-header" style="background: linear-gradient(135deg, #1e90ff, #00c896);">
+            <i class="fa-solid fa-shield"></i>
+            <h3>First Line Defense (Innate Immunity)</h3>
+          </div>
+          <div class="immune-body">
+            <h4>Physical Barriers</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-droplet"></i> <strong>Stomach Acid:</strong> Kills many bacteria before reaching
+                intestines</li>
+              <li><i class="fa-solid fa-bacteria"></i> <strong>Intestinal Lining:</strong> Forms protective barrier
+                against invasion</li>
+              <li><i class="fa-solid fa-shield-virus"></i> <strong>Good Bacteria:</strong> Compete with Salmonella for
+                resources</li>
+            </ul>
+
+            <h4 style="margin-top: 1.5rem;">Cellular Response</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-virus"></i> <strong>Macrophages:</strong> Engulf and destroy bacteria
+                (phagocytosis)</li>
+              <li><i class="fa-solid fa-fire"></i> <strong>Inflammation:</strong> Increases blood flow, brings immune
+                cells to infection site</li>
+              <li><i class="fa-solid fa-temperature-high"></i> <strong>Fever:</strong> Raises body temperature to
+                inhibit bacterial growth</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="immune-card fade-in">
+          <div class="immune-header" style="background: linear-gradient(135deg, #00c896, #1e90ff);">
+            <i class="fa-solid fa-dna"></i>
+            <h3>Adaptive Immunity (Learned Defense)</h3>
+          </div>
+          <div class="immune-body">
+            <h4>Key Players</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-b"></i> <strong>B-Cells:</strong> Produce antibodies that tag bacteria for
+                destruction</li>
+              <li><i class="fa-solid fa-syringe"></i> <strong>Antibodies (IgG, IgM):</strong> Neutralize bacteria and
+                mark them for removal</li>
+              <li><i class="fa-solid fa-t"></i> <strong>T-Cells:</strong> Coordinate immune response and kill infected
+                cells</li>
+              <li><i class="fa-solid fa-brain"></i> <strong>Memory Cells:</strong> Remember Salmonella for faster future
+                response</li>
+            </ul>
+
+            <h4 style="margin-top: 1.5rem;">Immune System Tissues Involved</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-circle-nodes"></i> <strong>Lymph Nodes:</strong> Filter and trap pathogens</li>
+              <li><i class="fa-solid fa-lungs"></i> <strong>Spleen:</strong> Filters blood, removes damaged cells</li>
+              <li><i class="fa-solid fa-bone"></i> <strong>Bone Marrow:</strong> Produces new immune cells</li>
+              <li><i class="fa-solid fa-stomach"></i> <strong>Gut-Associated Lymphoid Tissue:</strong> Monitors
+                intestinal threats</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card fade-in" style="margin-top: 3rem;">
+        <h3>How Salmonella Evades Your Defenses</h3>
+        <ul class="features">
+          <li><i class="fa-solid fa-mask"></i> <strong>Camouflage:</strong> Hides inside cells where antibodies can't
+            reach</li>
+          <li><i class="fa-solid fa-bolt"></i> <strong>Speed:</strong> Multiplies rapidly before full immune response
+            activates</li>
+          <li><i class="fa-solid fa-shield-halved"></i> <strong>Immune Suppression:</strong> Some strains interfere with
+            macrophage function</li>
+          <li><i class="fa-solid fa-dna"></i> <strong>Mutation:</strong> Over 2,500 serotypes make broad immunity
+            challenging</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SOLUTION -->
+  <section class="section solution" id="solution">
+    <div class="wrap">
+      <h2>SalmoShield™: Our Enhancement</h2>
+
+      <div class="grid-two">
+        <div class="fade-in">
+          <h3>What is SalmoShield™?</h3>
+          <p>SalmoShield™ is an advanced vaccine that trains your adaptive immune system to recognize and rapidly
+            respond to multiple Salmonella serotypes before infection occurs.</p>
+
+          <h4 style="margin-top: 2rem; color: var(--brand);">How It Works</h4>
+          <div class="mechanism-steps">
+            <div class="mech-step">
+              <strong>1. Safe Antigen Delivery</strong>
+              <p>Introduces weakened or inactive Salmonella antigens (surface proteins) via intramuscular injection</p>
+            </div>
+            <div class="mech-step">
+              <strong>2. Immune System Training</strong>
+              <p>B-cells recognize antigens and produce specific antibodies; T-cells learn to identify infected cells
+              </p>
+            </div>
+            <div class="mech-step">
+              <strong>3. Memory Cell Creation</strong>
+              <p>Long-lasting memory B and T cells remain in circulation, ready for rapid response</p>
+            </div>
+            <div class="mech-step">
+              <strong>4. Future Protection</strong>
+              <p>If real Salmonella enters body, memory cells trigger immediate antibody production—neutralizing
+                bacteria before illness develops</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card fade-in">
+          <h3>Technical Specifications</h3>
+          <table class="specs">
+            <tr>
+              <th>Formulation</th>
+              <td>Lyophilized (freeze-dried) powder or liquid</td>
+            </tr>
+            <tr>
+              <th>Target Serotypes</th>
+              <td>Multi-serotype coverage (top 10 strains)</td>
+            </tr>
+            <tr>
+              <th>Administration</th>
+              <td>Intramuscular injection (deltoid muscle)</td>
+            </tr>
+            <tr>
+              <th>Dosage</th>
+              <td>Single dose + optional 12-month booster</td>
+            </tr>
+            <tr>
+              <th>Storage</th>
+              <td>2–8°C (standard refrigeration)</td>
+            </tr>
+            <tr>
+              <th>Shelf Life</th>
+              <td>24 months</td>
+            </tr>
+            <tr>
+              <th>Efficacy Rate</th>
+              <td>92% seroconversion (antibody production)</td>
+            </tr>
+          </table>
+
+          <div class="progress-section" style="margin-top: 2rem;">
+            <h4>Development Status</h4>
+            <div class="progress-item">
+              <span>Research & Development</span>
+              <div class="progress-bar">
+                <div class="progress-fill" data-progress="100"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <span>Clinical Trials Phase II</span>
+              <div class="progress-bar">
+                <div class="progress-fill" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="progress-item">
+              <span>Regulatory Approval</span>
+              <div class="progress-bar">
+                <div class="progress-fill" data-progress="45"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comparison-section" style="margin-top: 3rem;">
+        <h3>Why SalmoShield™ is Better</h3>
+        <div class="comparison-grid">
+          <div class="comparison-card fade-in">
+            <h4>Current Methods</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-xmark" style="color: #e74c3c;"></i> No prevention—only treat after infection
+              </li>
+              <li><i class="fa-solid fa-xmark" style="color: #e74c3c;"></i> Antibiotics losing effectiveness
+                (resistance)</li>
+              <li><i class="fa-solid fa-xmark" style="color: #e74c3c;"></i> Typhoid vaccine only—doesn't cover food
+                poisoning strains</li>
+              <li><i class="fa-solid fa-xmark" style="color: #e74c3c;"></i> Relies on food safety alone (failures
+                common)</li>
+            </ul>
+          </div>
+          <div class="comparison-card fade-in" style="border-color: var(--accent);">
+            <h4>SalmoShield™ Advantages</h4>
+            <ul class="features">
+              <li><i class="fa-solid fa-check"></i> <strong>Broad Protection:</strong> Targets multiple serotypes</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Proactive Defense:</strong> Prevents illness before symptoms
+              </li>
+              <li><i class="fa-solid fa-check"></i> <strong>No Antibiotic Resistance:</strong> Uses natural immunity
+              </li>
+              <li><i class="fa-solid fa-check"></i> <strong>Long-Lasting:</strong> Memory cells provide years of
+                protection</li>
+              <li><i class="fa-solid fa-check"></i> <strong>Safe:</strong> Minimal side effects (mild injection site
+                reaction)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="section benefits" id="benefits">
+    <div class="wrap">
+      <h2>Key Benefits</h2>
+      <div class="benefit-grid">
+        <article class="benefit-card fade-in">
+          <i class="fa-solid fa-users"></i>
+          <h4>Protects High-Risk Groups</h4>
+          <p>Specially formulated for children, elderly, and immunocompromised individuals who face the greatest danger
+            from Salmonella infections.</p>
+        </article>
+        <article class="benefit-card fade-in">
+          <i class="fa-solid fa-hospital"></i>
+          <h4>Reduces Hospitalizations</h4>
+          <p>Prevents severe cases requiring IV fluids and intensive care, reducing the 26,500 annual US
+            hospitalizations.</p>
+        </article>
+        <article class="benefit-card fade-in">
+          <i class="fa-solid fa-virus-slash"></i>
+          <h4>Combats Antibiotic Resistance</h4>
+          <p>Reduces need for antibiotics, helping preserve their effectiveness for when they're truly needed.</p>
+        </article>
+        <article class="benefit-card fade-in">
+          <i class="fa-solid fa-globe"></i>
+          <h4>Travel Protection</h4>
+          <p>Essential for travelers to developing countries where Salmonella contamination is more common in water and
+            food supplies.</p>
+        </article>
+        <article class="benefit-card fade-in">
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Eco-Conscious Production</h4>
+          <p>Manufactured using sustainable, low-impact processes with biodegradable components.</p>
+        </article>
+        <article class="benefit-card fade-in">
+          <i class="fa-solid fa-temperature-low"></i>
+          <h4>Easy Distribution</h4>
+          <p>Standard refrigeration (2-8°C) requirements make global deployment feasible using existing cold chain
+            infrastructure.</p>
+        </article>
+      </div>
+
+      <div class="lab-section" style="margin-top: 4rem;">
+        <h3>Independent Laboratory Validation</h3>
+        <div class="lab-grid">
+          <div class="lab-card fade-in">
+            <h4>Aurora Biotech</h4>
+            <p class="small">Neutralization assay results</p>
+            <table class="lab-table">
+              <tr>
+                <td>Neutralization Titer (NT50)</td>
+                <td><strong>1:640</strong></td>
+              </tr>
+              <tr>
+                <td>Seroconversion Rate</td>
+                <td><strong>92%</strong></td>
+              </tr>
+              <tr>
+                <td>Test Date</td>
+                <td>Q4 2024</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="lab-card fade-in">
+            <h4>HelixLabs QC</h4>
+            <p class="small">Safety & purity screening</p>
+            <table class="lab-table">
+              <tr>
+                <td>Sterility Test</td>
+                <td><strong>Pass</strong></td>
+              </tr>
+              <tr>
+                <td>Endotoxin Level</td>
+                <td><strong>&lt;5 EU/mL</strong></td>
+              </tr>
+              <tr>
+                <td>Test Date</td>
+                <td>Q4 2024</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="lab-card fade-in">
+            <h4>Global Standards Lab</h4>
+            <p class="small">Long-term stability analysis</p>
+            <table class="lab-table">
+              <tr>
+                <td>Potency Retention</td>
+                <td><strong>98.5%</strong></td>
+              </tr>
+              <tr>
+                <td>24-Month Stability</td>
+                <td><strong>Confirmed</strong></td>
+              </tr>
+              <tr>
+                <td>Test Date</td>
+                <td>Q3 2024</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="wrap">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Who should get the SalmoShield™ vaccine?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>SalmoShield™ is recommended for high-risk groups including children under 5, adults over 65,
+              immunocompromised individuals, people with chronic conditions like IBD or sickle cell disease,
+              international travelers, and food service workers regularly exposed to raw foods.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>How does this differ from the typhoid vaccine?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>The typhoid vaccine only protects against Salmonella typhi, which causes typhoid fever. SalmoShield™
+              targets the multiple serotypes responsible for food poisoning (salmonellosis)—the most common form of
+              Salmonella infection in developed countries.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>What are the side effects?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Clinical trials show minimal adverse effects. Most common reactions include mild pain or redness at
+              injection site, low-grade fever (rare), and temporary fatigue. Serious side effects are extremely rare and
+              continuously monitored.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>How long does protection last?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Initial vaccination provides protection for approximately 1-2 years. A booster dose at 12 months can
+              extend immunity for several additional years. Ongoing research is evaluating longer-term protection and
+              optimal booster schedules.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Can I still get food poisoning after vaccination?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>SalmoShield™ provides 92% protection against Salmonella specifically. You could still get food poisoning
+              from other pathogens (E. coli, norovirus, etc.). The vaccine also won't protect against all 2,500+
+              Salmonella serotypes, though it covers the most common ones causing illness.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Does this mean I can eat raw chicken?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>No! The vaccine significantly reduces your risk but doesn't eliminate it completely. You should still
+              follow proper food safety practices: cook meat thoroughly, wash hands and surfaces, avoid
+              cross-contamination, and refrigerate foods promptly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item fade-in">
+          <button class="faq-question">
+            <span>Is it available internationally?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>SalmoShield™ is currently in Phase II clinical trials and pursuing regulatory approvals. We're working
+              with health agencies globally to make the vaccine available worldwide. Contact us for updates on
+              availability in your region.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials" id="testimonials">
+    <div class="wrap">
+      <h2>What Experts Say</h2>
+      <div class="carousel" id="testimonialCarousel">
+        <button class="carousel-nav prev" id="prevTest" aria-label="Previous testimonial"><i
+            class="fa-solid fa-chevron-left"></i></button>
+        <div class="carousel-track">
+          <blockquote class="testimonial active">
+            <p>"This vaccine addresses a critical gap in foodborne illness prevention. The multi-serotype approach is
+              exactly what we need."</p>
+            <footer>— Dr. Sarah Mitchell, Infectious Disease Specialist</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Early trial data shows remarkable immune response generation with minimal side effects—very promising
+              for vulnerable populations."</p>
+            <footer>— Dr. Lina Hayes, Aurora Biotech Research</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"The stable cold chain requirements make this vaccine practical for global distribution, unlike many
+              biologics."</p>
+            <footer>— Marcus Johnson, Global Health Logistics</footer>
+          </blockquote>
+        </div>
+        <button class="carousel-nav next" id="nextTest" aria-label="Next testimonial"><i
+            class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <h2>Get In Touch</h2>
+      <p class="muted small">Questions about SalmoShield™? Interested in clinical trials or partnership opportunities?
+        Contact us below.</p>
+      <form id="contactForm" class="form-card" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Full name" required />
+            <span class="error-message">Please enter your name</span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email address" required />
+            <span class="error-message">Please enter a valid email</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="organization" placeholder="Organization (optional)" />
+        </div>
+        <div class="form-group">
+          <select id="inquiry-type" required>
+            <option value="">Select inquiry type</option>
+            <option value="patient">Patient/General Public</option>
+            <option value="healthcare">Healthcare Provider</option>
+            <option value="research">Research Collaboration</option>
+            <option value="partnership">Partnership/Licensing</option>
+            <option value="media">Media Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="error-message">Please select an inquiry type</span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          <span class="error-message">Please enter your message</span>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-loader" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i></span>
+          </button>
+          <button type="button" class="btn ghost" id="downloadDemo">
+            <i class="fa-solid fa-download"></i> Download Product Info
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <i class="fa-solid fa-circle-check"></i>
+      <h3>Message Sent Successfully!</h3>
+      <p>Thank you for contacting SalmoShield™. We'll respond within 24-48 hours.</p>
+      <button class="btn primary" onclick="closeModal()">Close</button>
+    </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4><i class="fa-solid fa-shield-virus"></i> SalmoShield™</h4>
+          <p>Advanced immune enhancement for Salmonella protection.</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#pathogen">The Pathogen</a></li>
+            <li><a href="#immune-response">Immune Response</a></li>
+            <li><a href="#solution">Our Solution</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Clinical Trial Info</a></li>
+            <li><a href="#">Safety Data</a></li>
+            <li><a href="#">CDC Guidelines</a></li>
+            <li><a href="#">Food Safety Tips</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> info@salmoshield.com</li>
+            <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fa-solid fa-location-dot"></i> Boston, MA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SalmoShield™ | Educational Project Demo | <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
+
 </html>
