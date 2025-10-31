@@ -1,6 +1,3 @@
-// ==============================
-// NAVIGATION MENU TOGGLE
-// ==============================
 const menuToggle = document.getElementById("menuToggle");
 const nav = document.querySelector(".nav");
 
@@ -15,9 +12,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-// ==============================
-// SMOOTH SCROLLING
-// ==============================
 document.querySelectorAll("a[href^='#']").forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -37,9 +31,6 @@ document.querySelectorAll("a[href^='#']").forEach((link) => {
   });
 });
 
-// ==============================
-// HEADER SCROLL EFFECT
-// ==============================
 const header = document.querySelector(".site-header");
 let lastScroll = 0;
 
@@ -55,9 +46,6 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
-// ==============================
-// FADE-IN ANIMATION ON SCROLL
-// ==============================
 const faders = document.querySelectorAll(".fade-in");
 const fadeOptions = {
   threshold: 0.15,
@@ -75,9 +63,6 @@ const fadeObserver = new IntersectionObserver((entries) => {
 
 faders.forEach((fader) => fadeObserver.observe(fader));
 
-// ==============================
-// ANIMATED COUNTER FOR STATS
-// ==============================
 const statNumbers = document.querySelectorAll(".stat-number");
 let hasAnimated = false;
 
@@ -117,9 +102,6 @@ if (statsBar) {
   statsObserver.observe(statsBar);
 }
 
-// ==============================
-// PROGRESS BAR ANIMATION
-// ==============================
 const progressBars = document.querySelectorAll(".progress-fill");
 let progressAnimated = false;
 
@@ -145,9 +127,6 @@ if (progressSection) {
   progressObserver.observe(progressSection);
 }
 
-// ==============================
-// TESTIMONIAL CAROUSEL
-// ==============================
 const testimonials = document.querySelectorAll(".testimonial");
 let currentTestimonial = 0;
 const nextBtn = document.getElementById("nextTest");
@@ -205,9 +184,6 @@ carousel.addEventListener("mouseleave", () => {
   }, 6000);
 });
 
-// ==============================
-// FAQ ACCORDION
-// ==============================
 const faqQuestions = document.querySelectorAll(".faq-question");
 
 faqQuestions.forEach((question) => {
@@ -227,9 +203,6 @@ faqQuestions.forEach((question) => {
   });
 });
 
-// ==============================
-// CONTACT FORM VALIDATION & SUBMISSION
-// ==============================
 const contactForm = document.getElementById("contactForm");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
@@ -340,16 +313,8 @@ modal.addEventListener("click", (e) => {
   }
 });
 
-// ==============================
-// DEMO FILE DOWNLOAD
-// ==============================
 document.getElementById("downloadDemo").addEventListener("click", () => {
   const content = `
-═══════════════════════════════════════════════════
-  SalmoShield™ Product Information
-  Educational Project Demo
-═══════════════════════════════════════════════════
-
 PATHOGEN OVERVIEW
 ──────────────────────────────────────────────────
 Scientific Name: Salmonella enterica
@@ -440,16 +405,12 @@ Regulatory Approval: 45% Complete
 CONTACT INFORMATION
 ──────────────────────────────────────────────────
 Email: info@salmoshield.com
-Phone: +1 (555) 123-4567
-Location: Boston, MA
+Phone: +1 (613) 123-4567
+Location: Ottawa, ON
 
 ═══════════════════════════════════════════════════
-  © 2025 SalmoShield™ - Educational Project
+  © 2025 SalmoShield™
 ═══════════════════════════════════════════════════
-
-Note: This is an educational demonstration project.
-All data should be verified with actual research
-before any real-world application.
   `;
 
   const blob = new Blob([content], { type: "text/plain" });
@@ -470,9 +431,6 @@ before any real-world application.
   }, 2000);
 });
 
-// ==============================
-// BACK TO TOP BUTTON
-// ==============================
 const backToTopBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
@@ -490,9 +448,6 @@ backToTopBtn.addEventListener("click", () => {
   });
 });
 
-// ==============================
-// HERO PARTICLES ANIMATION
-// ==============================
 const particlesContainer = document.getElementById("particles");
 const particleCount = 50;
 
@@ -528,10 +483,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ==============================
-// KEYBOARD NAVIGATION
-// ==============================
-
 // ESC key to close modal and menu
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
@@ -547,10 +498,6 @@ document.addEventListener("keydown", (e) => {
     nextBtn.click();
   }
 });
-
-// ==============================
-// ACCESSIBILITY ENHANCEMENTS
-// ==============================
 
 // Add focus visible styles for keyboard navigation
 document.addEventListener("keydown", (e) => {
@@ -573,9 +520,6 @@ focusStyle.textContent = `
 `;
 document.head.appendChild(focusStyle);
 
-// ==============================
-// PAGE LOAD ANIMATION
-// ==============================
 window.addEventListener("load", () => {
   document.body.style.opacity = "0";
   document.body.style.transition = "opacity 0.5s ease";
@@ -585,9 +529,6 @@ window.addEventListener("load", () => {
   }, 100);
 });
 
-// ==============================
-// PREVENT ZOOM ON MOBILE INPUTS
-// ==============================
 const inputs = document.querySelectorAll("input, textarea, select");
 inputs.forEach((input) => {
   input.addEventListener("focus", () => {
@@ -607,24 +548,6 @@ inputs.forEach((input) => {
     }
   });
 });
-
-// ==============================
-// CONSOLE WELCOME MESSAGE
-// ==============================
-console.log(
-  "%cSalmoShield™",
-  "color: #1e90ff; font-size: 24px; font-weight: bold;"
-);
-console.log(
-  "%cNext-Generation Salmonella Protection",
-  "color: #00c896; font-size: 14px;"
-);
-console.log("%cEducational Project Demo", "color: #666; font-size: 12px;");
-
-// ==============================
-// INITIALIZATION COMPLETE
-// ==============================
-console.log("✓ Website initialized successfully");
 
 // Export functions for external use if needed
 window.SalmoShield = {
